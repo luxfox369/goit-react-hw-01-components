@@ -21,8 +21,8 @@ export const Stats = ( stats) => (
     </Item>
   </StatsList>
 )
-// Stats.propTypes = {
-//   followers: PropTypes.number,
-//   views: PropTypes.number,
-//   likes:PropTypes.number
-// }
+Stats.propTypes = {
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes:PropTypes.number
+}
