@@ -1,11 +1,11 @@
-// import PropTypes from 'prop-types'; // ES6
 
 import PropTypes from 'prop-types';
 import { Stats } from '../Stats/Stats';
-import user from '../../user.json';
 import { Prof, Description, Avatar, Name, Tag, Location } from "./Profile.styled";
-const { username, avatar, tag, location } = user;
+
 export const Profile = (user) => {
+    const { username, avatar, tag, location,stats } = user;
+
     return(
     <Prof>
         <Description>
@@ -17,7 +17,9 @@ export const Profile = (user) => {
             <Tag>@{tag}</Tag>
             <Location>{location}</Location>
         </Description>
-        <Stats />
+            
+        <Stats  />
+       
     </Prof>
     )
 }

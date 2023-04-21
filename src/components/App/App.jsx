@@ -1,12 +1,21 @@
-// import PropTypes from 'prop-types'; // ES6
-// import styled from '@emotion/react';
-import { Profile } from '../Profile/Profile';
 import { Container } from './App.styled';
+import { Profile } from '../Profile/Profile';
+
+import  user from '../../user.json';
 
 export const App = () => {
+const  { username, avatar, tag, location }= user;
+
   return (
     <Container>
-     <Profile />
+      <Profile
+        username={username}
+        avatar={avatar}
+        tag={tag}
+        location={location}
+     
+      />
+      
    </Container>
   );
 };
