@@ -4,9 +4,8 @@ import { Stats } from '../Stats/Stats';
 import { Prof, Description, Avatar, Name, Tag, Location } from "./Profile.styled";
 
 export const Profile = (user) => {
-    const { username, avatar, tag, location,stats } = user;
-
-    return(
+    const { username, avatar, tag, location } = user;
+     return(
     <Prof>
         <Description>
             <Avatar
