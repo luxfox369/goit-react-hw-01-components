@@ -1,11 +1,12 @@
 import { Container } from './App.styled';
 //import { Profile } from '../Profile/Profile';
 //import { Statistics } from '../Statistics/Statistics';
-import { FriendList } from '../Friends/FriendList';
+//import { FriendList } from '../Friends/FriendList';
+import { TransactionHistory } from '../Transactions/TransactionHistory';
 //import user from '../../user.json';
 //import stats from '../../data.json';
-import friends from '../../friends.json';
-//console.log('friends', friends); //масив
+//import friends from '../../friends.json';
+import transactions from '../../transactions.json';
 
 //task №1
 // export const App = () => {
@@ -37,12 +38,22 @@ import friends from '../../friends.json';
 //end Task2
 
 //Task3
+// export const App = () => {
+//   return (
+//     <Container>
+//       <FriendList data={friends} />
+//     </Container>
+//   );
+// };
+
+//end Task3
+//Task4
 export const App = () => {
   return (
     <Container>
-      <FriendList data={friends} />
+      <TransactionHistory data={transactions} />
     </Container>
   );
 };
 
-//end Task3
+//end Task4
