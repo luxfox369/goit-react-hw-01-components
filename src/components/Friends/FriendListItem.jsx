@@ -3,13 +3,12 @@ import clsx from 'clsx';
 import css from './FriendListItem.module.css';
 
 export const FriendListItem = ({ item }) => {
-  const { avatar, name, isOnline, id } = item;
+  const { avatar, name, isOnline } = item;
   return (
-    <li key={id} className={css.item}>
+    <li className={css.item}>
       <span className={clsx(css.status, { [css.isOnline]: isOnline })}>
         {isOnline}
       </span>
-      {/* <span className={css.status}></span> */}
       <img className={css.avatar} src={avatar} alt={name} width="48" />
       <p className={css.name}>{name}</p>
     </li>
