@@ -6,10 +6,10 @@ export const FriendListItem = ({ item }) => {
   const { avatar, name, isOnline, id } = item;
   return (
     <li key={id} className={css.item}>
-      {/* <span className={clsx('status', { isOnline } && 'isOnline')}>
+      <span className={clsx(css.status, { [css.isOnline]: isOnline })}>
         {isOnline}
-      </span> */}
-      <span className={css.status}></span>
+      </span>
+      {/* <span className={css.status}></span> */}
       <img className={css.avatar} src={avatar} alt={name} width="48" />
       <p className={css.name}>{name}</p>
     </li>
