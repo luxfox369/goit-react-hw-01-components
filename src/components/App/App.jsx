@@ -12,12 +12,7 @@ import transactions from '../../transactions.json';
 export const App = () => {
   return (
     <Container>
-      <Profile
-        username={username}
-        avatar={avatar}
-        tag={tag}
-        location={location}
-      />
+      <Profile item={user} />
       <Statistics title="Upload stats" data={stats} />
       <FriendList data={friends} />
       <TransactionHistory data={transactions} />
