@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
 export const Prof = styled.div`
   width: 350px;
+  height: 500px;
   background-color: #fff;
-  margin: 20px;
+  margin: 10px;
 `;
 export const Description = styled.div`
   display: flex;
