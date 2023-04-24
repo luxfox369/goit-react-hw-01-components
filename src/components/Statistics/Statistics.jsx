@@ -28,6 +28,6 @@ function getRandomHexColor() {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };

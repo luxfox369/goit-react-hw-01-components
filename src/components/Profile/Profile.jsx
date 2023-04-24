@@ -25,8 +25,8 @@ export const Profile = ({ item }) => {
   );
 };
 Profile.propTypes = {
-  username: PropTypes.string,
-  avatar: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 };
