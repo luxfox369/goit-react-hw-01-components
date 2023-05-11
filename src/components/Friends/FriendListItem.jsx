@@ -6,6 +6,7 @@ export const FriendListItem = ({ item }) => {
   const { avatar, name, isOnline } = item;
   return (
     <li className={css.item}>
+      {/* композиція класів :спочатку css.status а зврху css.isOnline якщо isOnline true */}
       <span className={clsx(css.status, { [css.isOnline]: isOnline })}>
         {isOnline}
       </span>
