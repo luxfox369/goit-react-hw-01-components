@@ -8,25 +8,21 @@
   width: 700px;
 }
 .thead {
-  background-color: rgb(106, 191, 214);
+  background-color: rgb(104, 186, 134);
   color: white;
   font-size: 20px;
   text-transform: uppercase;
 }
-/* thead th {
-  width: 33%;
-  border: 1px solid grey;
-} */
 th {
   border: 1px solid grey;
 }
 td {
-  font-size: 18px;
+  font-size: 14px;
   border: 1px solid grey;
 }
 th,
 td {
-  padding: 10px;
+  padding: 5px;
 }
 
 tbody td {
